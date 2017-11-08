@@ -1,4 +1,4 @@
-/** 
+/**
 * Anax Flat theme.
 */
 @import url(modules.less);
@@ -12,10 +12,57 @@
     position: absolute;
     top: 70px;
     left: -140px;
+    display: none;
 }
 
 .site-logo-text-icon {
     img {
         vertical-align: bottom;
+        display: none;
+    }
+}
+
+
+/** --------------------------------------------------------------
+ *  Header
+ */
+
+// Size of max navbar button
+.rm-max .rm-small .rm-button {
+    font-size: 2.2em;
+}
+
+@maxButtonFontSize: 2.2em;
+
+
+// Style navbar
+.rm-desktop li {
+    background-color: #0094c1;
+    color: white;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+@navbarItemBgColor: #0094c1;
+
+
+// Size each item in the header
+.site-logo-text,
+.navbar2,
+.profile {
+    float: left;
+    width: 40%;
+}
+
+.site-header {
+    height: 70px;
+}
+
+// Site title
+.site-logo-text {
+    font-size: 2em;
+
+    a {
+        text-decoration: none;
     }
 }
