@@ -1,33 +1,52 @@
-
 /** --------------------------------------------------------------
  *  Header
  */
 
 // Size of max navbar button
 .rm-max .rm-small .rm-button {
-    font-size: 2em;
+    font-size: 2.0em;
 }
 
-@maxButtonFontSize: 2em;
+@maxButtonFontSize: 2.0em;
+
 
 // Style navbar
 .rm-desktop li {
-    background-color: #096;
+    background-color: #0094c1;
+    color: white;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin-top: 10px;
 }
 
-@navbarItemBgColor: #096;
+@navbarItemBgColor: #0094c1;
 
+.rm-desktop li:hover {
+    background-color: #5a0094;
+}
+
+.rm-desktop li a {
+    border-radius: 4px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.rm-desktop li a:hover {
+    text-decoration: none;
+}
 
 // Size each item in the header
 .site-logo-text,
 .navbar2,
 .profile {
     float: left;
-    width: 30%;
+    width: 45%;
 }
 
 .site-header {
-    height: 80px;
+    height: 70px;
 }
 
 // Site title
