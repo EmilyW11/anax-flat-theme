@@ -1,0 +1,93 @@
+/**
+ * Regions, basics to show off the regions.
+ */
+
+.wrap-all {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: white;
+    padding: 10px 10px 0 10px;
+
+}
+
+.sidebar {
+    width: 33%;
+    float: left;
+}
+
+.main .has-sidebar {
+    width: 67%;
+    float: left;
+}
+
+
+
+
+.next-previous {
+    .next,
+    .previous {
+        width: 50%;
+    }
+
+    .next {
+        float: right;
+        text-align: right;
+    }
+}
+
+.breadcrumb {
+    margin-bottom: 22px;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+    }
+
+    li {
+        display: inline-block;
+
+        &::after {
+            content: " » ";
+        }
+    }
+}
+
+.outer-wrap-breadcrumb {
+    background-color: #aadde2;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.outer-wrap-breadcrumb a {
+    text-decoration: none;
+}
+
+
+
+.site-header {
+    position: relative;
+}
+
+
+/** --------------------------------------------------------------
+ *  Header
+ */
+
+// Size of max navbar button
+.rm-max .rm-small .rm-button {
+    font-size: 1.7em;
+}
+
+@maxButtonFontSize: 1.7em;
+
+
+
+// Site title
+.site-logo-text {
+    font-size: 2em;
+
+    a {
+        text-decoration: none;
+    }
+}

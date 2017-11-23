@@ -1,0 +1,34 @@
+@import "typography-font-families.less";
+@import "typography-sizes.less";
+@import "typography-mixins.less";
+@import "typography-defaults.less";
+
+.inner-wrap-main {
+    .font(@fontFamilyBody);
+
+    .typographyHeadings();
+    .typographyTextElements();
+    .typographyCodeElements();
+    .typographyListElements();
+    .typographyTableElements();
+    .typographyOtherElements();
+}
+
+.hgrid,
+.route-typography {
+    background-image: url(../img/horizontal-grid-24.png);
+    font-family: @fontFamilyHelveticaNeue;
+}
+.route- {
+    font-family: @fontFamilyCambria;
+}
+.route-about {
+    font-family: @fontFamilyCambria;
+}
+.route-gallery {
+    font-family: @fontFamilyGaramond;
+}
+
+.route-report {
+    font-family: @fontFamilyHelveticaNeue;
+}

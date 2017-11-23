@@ -1,0 +1,85 @@
+
+body {
+  .container();
+   max-width: 1050px;
+
+}
+
+.row {
+  .row();
+}
+
+.site-header {
+    .column(12);
+}
+
+.flash-wrap {
+    .column(12);
+    .push(0.45);
+}
+
+
+.content {
+  .column(12);
+}
+
+.main {
+  .column(12);
+}
+
+
+.footer-column {
+   .column(4);
+   text-align: left;
+}
+
+.footer {
+    .column(12);
+}
+
+
+
+.vgrid, .route-grid {
+  background: url(../img/grid24.png) repeat-y fixed center center;
+}
+
+
+
+
+.col-main {
+    .column(7);
+}
+
+.col-sidebar {
+    .column(4);
+}
+
+
+@media screen and (max-width: 1070px) {
+    .flash-wrap {
+        .column(11);
+        .push(0.45);
+    }
+
+    .col-sidebar {
+        .column(4);
+
+    }
+
+    .col-main {
+        .column(7);
+    }
+
+
+}
+
+@media screen and (max-width: 750px) {
+    .col-main {
+        .column(9);
+    }
+
+    .col-sidebar {
+        .column(9);
+
+    }
+}
