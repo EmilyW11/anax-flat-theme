@@ -1,0 +1,36 @@
+@import url(base.less);
+@import url(light.less);
+@import url(colorful.less);
+
+@logofont: 'Cinzel';
+@breadcrumbfont: 'Comfortaa';
+@navbarFont: 'Quattrocento';
+@footerH4Font: 'Comfortaa';
+
+
+html.light {
+    article {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h1 {
+        font-family: 'Spectral SC', serif;
+    }
+
+    .rm-desktop a {
+        font-family: @navbarFont, cursive;
+
+    }
+
+    .site-logo-text a {
+        font-family: @logofont, serif;
+    }
+
+    .outer-wrap-breadcrumb a {
+        font-family: @breadcrumbfont, cursive;
+    }
+
+    .footer-column-wrapper h4 {
+        font-family: @footerH4Font, cursive;
+    }
+}

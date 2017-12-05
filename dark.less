@@ -1,0 +1,115 @@
+@import url(base.less);
+
+@htmlBkGrColor: #050504;
+@bodyBkGrColor: #2f2f2f;
+@footerBkGrColor: #2f2f2f;
+@lowerFooterBkGrColor: #15ae35;
+@lowerFooterFontColor: #2f2f2f;
+@footerFontColor: #15ae35;
+
+@bylineColor: #15ae35;
+@borderColor: #f1f09b;
+@borderStyle: dashed;
+
+
+@navHoverBkGround: #f1f09b;
+@navBkGrColor: transparent;
+@navColor: #6ee286;
+@navHoverColor: black;
+
+@breadcrumbBkGrColor: #f1f09b;
+@breadcrumbColor: black;
+
+@h1BottomBorderStyle: dashed;
+@h1BottomBorderColor: #6ee286;
+@h1Color: #15ae35;
+
+@color: #aff1bd;
+
+@logoColor: #f1f09b;
+@logoHoverColor: #6ee286;
+
+html.dark {
+    background-color: @htmlBkGrColor;
+    color: @color;
+
+    .site-logo-text a:visited{
+        color: @logoColor;
+    }
+
+    .site-logo-text a {
+        color: @logoColor;
+    }
+
+    .site-logo-text a:hover {
+        color: @logoHoverColor;
+    }
+
+    h1 {
+        border-bottom: 1px @h1BottomBorderStyle @h1BottomBorderColor;
+        color: @h1Color;
+    }
+
+    body {
+        background-color: @bodyBkGrColor;
+    }
+
+    .footer-column-wrapper {
+        background-color: @footerBkGrColor;
+        color: @footerFontColor;
+    }
+
+    .footer-column-wrapper a {
+        color: @footerFontColor;
+    }
+
+    .footer-column {
+        background-color: @footerBkGrColor;
+    }
+
+    .site-footer {
+        background-color: @lowerFooterBkGrColor;
+        color: @footerFontColor;
+    }
+
+    .site-footer a {
+        color: @lowerFooterFontColor;
+    }
+
+    .byline {
+        background-color: @bodyBkGrColor;
+    }
+
+    .byline a, a:visited {
+        color: @bylineColor;
+    }
+
+    .rm-desktop a {
+        background-color: @navBkGrColor;
+        color: @navColor;
+    }
+
+    .rm-desktop a:hover {
+        background-color: @navHoverBkGround;
+        color: @navHoverColor;
+    }
+
+    .outer-wrap-breadcrumb {
+        background-color: @breadcrumbBkGrColor;
+        color: @breadcrumbColor;
+    }
+
+    .outer-wrap-breadcrumb a {
+        color: @breadcrumbColor;
+    }
+
+    .byline-wrapper {
+        border-top: 1px @borderStyle @borderColor;
+        border-bottom: 1px @borderStyle @borderColor;
+    }
+
+    .rm-mobile {
+        background-color: @footerBkGrColor;
+    }
+
+}

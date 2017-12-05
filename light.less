@@ -1,0 +1,102 @@
+@import url(base.less);
+
+@htmlBkGrColor: #c9c9c6;
+@bodyBkGrColor: #f9f9f9;
+@footerBkGrColor: #464642;
+@lowerFooterBkGrColor: #464642;
+@footerFontColor: white;
+@lowerFooterFontColor: white;
+@navHoverBkGround: #464642;
+@navBkGrColor: transparent;
+@navColor: black;
+@navHoverColor: white;
+@bylineColor: black;
+@borderColor: #c9c9c6;
+@borderStyle: solid;
+@borderSize: 1px;
+@breadcrumbBkGrColor: #464642;
+@breadcrumbColor: white;
+@h1BottomBorderSize: 1px;
+@h1BottomBorderStyle: solid;
+@h1BottomBorderColor: black;
+@h1Color: black;
+@color: black;
+@logoColor: #464642;
+@logoHoverColor: #797977;
+
+html.light {
+    background-color: @htmlBkGrColor;
+    color: @color;
+
+    h1 {
+        border-bottom: @h1BottomBorderSize @h1BottomBorderStyle @h1BottomBorderColor;
+        color: @h1Color;
+    }
+
+    body {
+        background-color: @bodyBkGrColor;
+    }
+
+    .footer-column-wrapper {
+        background-color: @footerBkGrColor;
+        color: @footerFontColor;
+    }
+
+    .footer-column-wrapper a {
+        color: @footerFontColor;
+    }
+
+    .footer-column {
+        background-color: @footerBkGrColor;
+    }
+
+    .site-footer {
+        background-color: @lowerFooterBkGrColor;
+        color: @footerFontColor;
+    }
+
+    .site-footer a {
+        color: @lowerFooterFontColor;
+    }
+
+    .byline {
+        background-color: @bodyBkGrColor;
+        color: @bylineColor;
+    }
+
+    .rm-desktop a {
+        background-color: @navBkGrColor;
+        color: @navColor;
+    }
+
+    .rm-desktop a:hover {
+        background-color: @navHoverBkGround;
+        color: @navHoverColor;
+    }
+
+    .outer-wrap-breadcrumb {
+        background-color: @breadcrumbBkGrColor;
+        color: @breadcrumbColor;
+    }
+
+    .outer-wrap-breadcrumb a {
+        color: @breadcrumbColor;
+    }
+
+    .byline-wrapper {
+        border-top: @borderSize @borderStyle @borderColor;
+        border-bottom: @borderSize @borderStyle @borderColor;
+    }
+
+    .rm-mobile {
+        background-color: @footerBkGrColor;
+    }
+
+    .site-logo-text a {
+        color: @logoColor;
+    }
+
+    .site-logo-text a:hover {
+        color: @logoHoverColor;
+    }
+}

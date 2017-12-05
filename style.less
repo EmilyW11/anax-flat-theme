@@ -4,7 +4,6 @@
 @import url(modules.less);
 
 
-
 /** --------------------------------------------------------------
  *  Logo images
  */
@@ -18,51 +17,192 @@
 .site-logo-text-icon {
     img {
         vertical-align: bottom;
+    }
+}
+
+.wrap-all {
+    margin: 0 auto;
+}
+
+
+.breadcrumb-list li {
+    display: inline-block;
+}
+
+
+.front-image {
+     text-align: center;
+     margin: auto;
+     width: auto;
+     border-radius: 6px;
+     margin-top:20px;
+ }
+
+.outer-wrap-breadcrumb {
+    //background-color: #aadde2;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.outer-wrap-breadcrumb a {
+    text-decoration: none;
+}
+
+.col-sidebar {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.col-main {
+    float:left;
+}
+
+
+.has-sidebar-left {
+    float: left;
+}
+
+.sidebar-left {
+    float: left;
+}
+
+.navbar2
+ {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.fun-wrapper {
+    text-align: center;
+}
+
+.fun-div {
+    margin-top:-48px;
+}
+
+.fun-div2 {
+    margin-top:-48px;
+}
+
+.fun-div3 {
+    margin-top:-48px;
+    margin-bottom: 20px;
+}
+
+.fun-wrapper img {
+    margin: auto;
+    width: auto;
+    margin-top: 25px;
+}
+
+
+
+
+
+/** --------------------------------------------------------------
+ *  Responsive design
+ */
+img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    .site-logo-text {
+        width: 30%;
+    }
+
+    .byline {
+        margin-bottom: 20px;
+    }
+
+    .profile {
+        width: 10%;
+    }
+
+
+    .breadcrumb {
+        display:none;
+    }
+
+    .gallery-row p {
+        display:block;
+    }
+
+    .gallery-row img {
+        width: auto;
+    }
+
+    .footer-column {
+        margin-bottom: 10px;
+        display: block;
+        height:auto;
+        width: 100%;
+    }
+
+    .footer {
+        width: 99%;
+    }
+    .footer-column-wrapper {
+        padding-bottom: 0;
+        padding-right:17px;
+        width: 65%;
+        margin: auto;
+        display:block;
+    }
+
+    .site-footer {
+      width: 100%;
+    }
+
+    .outer-wrap-breadcrumb {
+        width: auto;
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .sidebar {
+        //width: 100%;
+        display: none;
+    }
+    .footer-column-wrapper {
+        width: 90%;
+        padding-right: 11px;
+    }
+
+    .byline img {
+        float: none;
+    }
+
+    .byline {
+        text-align: center;
+    }
+
+    .col-sidebar {
+        float: none;
+        margin-top: 20px;
+    }
+
+    .col-main {
+        float:none;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .navbar2 {
         display: none;
     }
 }
 
 
-/** --------------------------------------------------------------
- *  Header
- */
-
-// Size of max navbar button
-.rm-max .rm-small .rm-button {
-    font-size: 2.2em;
-}
-
-@maxButtonFontSize: 2.2em;
-
-
-// Style navbar
-.rm-desktop li {
-    background-color: #0094c1;
-    color: white;
-    margin-left: 3px;
-    margin-right: 3px;
-}
-
-@navbarItemBgColor: #0094c1;
-
-
-// Size each item in the header
-.site-logo-text,
-.navbar2,
-.profile {
-    float: left;
-    width: 40%;
-}
-
-.site-header {
-    height: 70px;
-}
-
-// Site title
-.site-logo-text {
-    font-size: 2em;
-
-    a {
-        text-decoration: none;
+@media screen and (max-width: 560px) {
+    .body {
+        width: 99%;
+        margin: auto;
     }
-}
+     .site-logo-text {
+         width: 90%;
+     }
+ }
